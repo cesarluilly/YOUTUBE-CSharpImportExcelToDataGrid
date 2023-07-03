@@ -70,8 +70,21 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmImportExcelToDatagrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImportExcelToDatagrid.Designer.cs">
+      <DependentUpon>FrmImportExcelToDatagrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PersonasViewModel.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImportExcelToDatagrid.resx">
+      <DependentUpon>FrmImportExcelToDatagrid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

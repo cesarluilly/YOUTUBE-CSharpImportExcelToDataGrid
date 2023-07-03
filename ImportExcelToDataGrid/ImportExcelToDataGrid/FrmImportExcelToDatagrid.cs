@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,7 +16,7 @@ namespace ImportExcelToDataGrid
     {
         //-------------------------------------------------------------------------------------------------------------
         //                                                  //INSTANCE VARIABLES.
-        private String path = "C:\\Users\\Cesar Garcia\\source\\reposFormCSharp\\YOUTUBE-CSharpImportExcelToDataGrid\\ImportExcelToDataGrid\\excelTest.xlsx";
+
 
         //-------------------------------------------------------------------------------------------------------------
         //                                                  //CONSTRUCTORS.
@@ -34,6 +35,8 @@ namespace ImportExcelToDataGrid
         //--------------------------------------------------------------------------------------------------------------
         private void FrmImportExcelToDatagrid_Load(object sender, EventArgs e)
         {
+            String strTest = Directory.GetCurrentDirectory();
+            String path = Path.Combine(Directory.GetCurrentDirectory(), @"FileExcel/ImportExcelToDatagrid.xlsx");
             SLDocument sl = new SLDocument(path);
 
             List<PersonasViewModel> darrperviemodelPersonasViewModel = new List<PersonasViewModel>();
